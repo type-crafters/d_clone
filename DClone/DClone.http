@@ -1,0 +1,6 @@
+@DClone_HostAddress = http://localhost:5248
+
+GET {{DClone_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

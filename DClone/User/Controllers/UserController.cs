@@ -21,18 +21,8 @@ public class UserController : ControllerBase
     }
 
     [HttpPost("new")]
-    public ActionResult SignUp([FromBody] SignupUser user)
+    public ActionResult SignUp([FromForm] SignupUser user)
     {
-        if(string.IsNullOrWhiteSpace(user.UserName)) 
-        {
-            var error = new 
-            {
-                Code = SignUpErrorCodes.NULL_USERNAME,
-                Message = SignUpErrorCodes.NULL_USERNAME.ToString()
-            };
-            return BadRequest(error);
-        }
-
-        return Ok();
+        return Ok("RubielGOD pero en /api/user/new");
     }
 }

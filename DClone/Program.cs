@@ -1,7 +1,10 @@
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
+
 WebApplication app = builder.Build();
 
-app.MapGet("/", () => "<h1>RubielGOD</h1><hr>" );
+app.UseRouting();
+app.MapControllers();
 
 app.Run();

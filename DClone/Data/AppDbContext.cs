@@ -1,11 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
 using DotNetEnv;
+using DClone.Entities;
 
 namespace DClone.Data;
 
 public class AppDbContext : DbContext
 {
+    public DbSet<UserEntity> users;
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         base.OnConfiguring(optionsBuilder);

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Inter';
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        color-scheme: light;
+        background-color: white;
+        color: #262626;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color-scheme: dark;
+        background-color: #262626;
+        color: white;
+    }
+}

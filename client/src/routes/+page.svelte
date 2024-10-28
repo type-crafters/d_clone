@@ -1,4 +1,5 @@
 <script lang="ts">
+    import ReplyMessage from "$lib/ReplyMessage.svelte";
     import TextMessage from "$lib/TextMessage.svelte";
     import MessageBox from "$lib/MessageBox.svelte";
 </script>
@@ -7,7 +8,7 @@
 </svelte:head>
 
 <main id="direct-message" class="px-6">
-    <TextMessage/>
+    <ReplyMessage/>
     <MessageBox/>
 </main>
 

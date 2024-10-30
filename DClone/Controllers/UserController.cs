@@ -10,7 +10,6 @@ public class UserController : ControllerBase
 {
     [HttpPost("signup")]
     public ActionResult RegisterUser([FromForm] UserSignupModel user) {
-
-        return Ok();
+        return Ok(""); 
     }
 }

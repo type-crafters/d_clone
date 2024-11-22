@@ -1,6 +1,0 @@
-@DClone_HostAddress = http://localhost:5262
-
-GET {{DClone_HostAddress}}/
-Accept: application/json
-
-###

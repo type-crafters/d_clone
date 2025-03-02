@@ -30,11 +30,14 @@ Whisper is a real time chat application that features direct messaging, friend l
 
 ## Tech Stack
 
-- Svelte
-- Node.js
-- Express
-- MongoDB
-- Docker
+### API Layer
+
+**Language:** [TypeScript](https://www.typescriptlang.org)
+
+**Runtime:** [Bun](https://bun.sh)
+
+**API Framework:** [NestJS](https://nestjs.com)
+
 
 ## Getting Started
 
@@ -47,30 +50,17 @@ cd d_clone
 
 ```
 
-Restore all the necessary Node modules using your package manager of choice:
+Restore all the necessary Node modules using bun:
 
-- For **npm** users:
 ```shell
-npm install
+bun install
 ```
 
-- For **yarn** users:
-```shell
-yarn install
-```
+Use the `start` or `start:dev` scripts included in the project's `package.json` to start the development server.
 
-Use the included `start` script in the project's `package.json`, or the `start:dev` option to watch for file changes.
-
-- For **npm** users:
 ```shell
-npm run start
-npm run start:dev
-```
-
-- For **yarn** users:
-```shell
-yarn run start
-yarn run start:dev
+bun run start
+bun run start:dev # watches for file changes
 ```
 
 ## Development

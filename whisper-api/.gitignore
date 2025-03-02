@@ -1,54 +1,34 @@
-packages/*/package-lock.json
-sample/**/package-lock.json
+# dependencies (bun install)
+node_modules
 
-# dependencies
-node_modules/
+# output
+out
+dist
+*.tgz
 
-# IDE
-/.idea
-/.awcache
-/.vscode
-/.devcontainer
-/.classpath
-/.project
-/.settings
-*.code-workspace
+# code coverage
+coverage
+*.lcov
 
-# Vim
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-rt-v][a-z]
-[._]ss[a-gi-z]
-[._]sw[a-p]
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
-# bundle
-packages/**/*.d.ts
-packages/**/*.js
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
 
-# misc
-.DS_Store
-lerna-debug.log
-npm-debug.log
-yarn-error.log
-/**/npm-debug.log
-/packages/**/.npmignore
-/packages/**/LICENSE
+# caches
+.eslintcache
+.cache
 *.tsbuildinfo
 
-# example
-/quick-start
-/example_dist
-/example
+# IntelliJ based IDEs
+.idea
 
-# tests
-/test
-/benchmarks/memory
-/coverage
-/.nyc_output
-/packages/graphql
-/benchmarks/memory
-build/config\.gypi
-
-.npmrc
-pnpm-lock.yaml
-/.history
+# Finder (MacOS) folder config
+.DS_Store

@@ -22,7 +22,7 @@ Whisper is a real time chat application that features direct messaging, friend l
 ## Features
 
 - User Creation: Users may create accounts to use the application
-- Profile managemeng: Users may edit their profile picture, description, preferences, color scheme, and privacy and visibility settings. 
+- Profile management: Users may edit their profile picture, description, preferences, color scheme, and privacy and visibility settings. 
 - Friend lists: Users may find friends by username, etc., and send friend requests, which, when accepted, will add the user to their friend list for further action.
 - Direct messaging: Users may message their friends using private channels.
 - Workgroups: Workgroups work by joining different users together in a collection of text and file channels that workgroup administrators may manage as needed, in order to provide a streamlined way to share information 

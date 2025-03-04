@@ -15,6 +15,7 @@ assignees: ''
 
 
 ### ✅ Acceptance Criteria
+
 - [ ] **[criteria 1]**
 
 ### 🔧 Technical Notes

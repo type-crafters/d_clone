@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Post } from "@nestjs/common";
 import { UsersService } from "./users.service";
-import type { ILoginRequest } from "../lib/ILoginRequest";
+import { LoginDTO } from "./dto/login.dto";
 
 @Controller("users")
 export class UsersController {
@@ -16,7 +16,7 @@ export class UsersController {
     }
 
     @Post("login")
-    public postLogin(@Body() body: ILoginRequest) {
-         
+    public postLogin(@Body() body: LoginDTO) {
+        void body;
     }
 }

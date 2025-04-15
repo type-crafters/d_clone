@@ -1,23 +1,30 @@
 {
     "compilerOptions": {
-        "target": "ES2020",
-        "module": "ES6",
-        "moduleResolution": "node",
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "verbatimModuleSyntax": true,
+        "noEmit": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "allowJs": true,
-        "checkJs": false,
-        "strict": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "forceConsistentCasingInFileNames": true,
-        "outDir": "./dist",
         "baseUrl": "./",
         "paths": {
             "@/*": [
                 "src/*"
             ]
-        }
+        },
+        "strict": true,
+        "skipLibCheck": true,
+        "noFallthroughCasesInSwitch": true,
+        "strictNullChecks": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitAny": false,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noPropertyAccessFromIndexSignature": false
     },
     "include": [
         "src/**/*.ts"

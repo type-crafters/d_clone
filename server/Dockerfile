@@ -1,19 +1,13 @@
 # auto-generated Dockerfile
-FROM node:22-alpine AS build
-
-WORKDIR /build
-
-COPY package.json package-lock.json* /build/
-RUN npm install
-
-COPY ./src /build
-
-RUN npm run build
-
-FROM node:22-alpine AS prod
+FROM oven/bun:1 AS prod
 
 WORKDIR /app
 
-COPY --from=build /build/dist /app/dist
+COPY bun.lock /app/
+COPY package.json /app/
+RUN bun install --frozen-lockfile
+
+COPY . /app
+
 ENV NODE_ENV=production
-CMD ["node", "/app/dist/index.js"]
+CMD ["bun", "src/index.ts"]

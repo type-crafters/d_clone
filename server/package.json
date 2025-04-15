@@ -16,6 +16,14 @@
     },
     "scripts": {
         "test": "jest",
-        "dev": "bun --watch src/main.ts"
+        "dev": "bun --watch run src/main.ts"
+    },
+    "dependencies": {
+        "@nestjs/mongoose": "^11.0.3",
+        "@nestjs/platform-express": "^11.0.17",
+        "@nestjs/typeorm": "^11.0.0",
+        "mongoose": "^8.13.2",
+        "mysql2": "^3.14.0",
+        "typeorm": "^0.3.22"
     }
 }

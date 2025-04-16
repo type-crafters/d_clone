@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.data-type {
+    @apply bg-neutral-200 rounded-sm py-0.5 px-1;
+}
